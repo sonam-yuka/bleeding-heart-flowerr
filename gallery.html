@@ -11,6 +11,7 @@
       background-color: #fff0f5;
       margin: 0;
       text-align: center;
+      padding-bottom: 50px; /* Added padding so the button isn't at the very edge */
     }
 
     nav {
@@ -50,12 +51,35 @@
     .gallery img:hover {
       transform: scale(1.05);
     }
+
+    /* BUTTON STYLING */
+    .btn-container {
+      margin-top: 30px;
+    }
+
+    .more-info-btn {
+      display: inline-block;
+      background-color: #cc0066;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 50px; /* Rounded pill shape */
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .more-info-btn:hover {
+      background-color: #ff4d88;
+      transform: scale(1.1);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
   </style>
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -66,16 +90,21 @@
 
   <h1>Bleeding Heart Flower Gallery</h1>
 
-  <!-- 10 ONLINE IMAGES -->
   <div class="gallery">
-    <img src="image/bleeding.jpg"Bleeding Heart Flower>
-    <img src="image/images (1).jpg"Bleeding Heart Flower>
-    <img src="image/images.jpg"Bleeding Heart Flower>
-    <img src="image/heart.jpg"Bleeding Heart Flower>
-    <img src="image/flower.jpg"Bleeding Heart Flower>
-    <img src="image/BH.avif"Bleeding Heart Flower>
-    <img src="image/images.jpg"Bleeding Heart Flower>
-    <img src="image/images (2).jpg"Bleeding Heart Flower>
+    <img src="image/bleeding.jpg" alt="Bleeding Heart Flower">
+    <img src="image/images (1).jpg" alt="Bleeding Heart Flower">
+    <img src="image/images.jpg" alt="Bleeding Heart Flower">
+    <img src="image/heart.jpg" alt="Bleeding Heart Flower">
+    <img src="image/flower.jpg" alt="Bleeding Heart Flower">
+    <img src="image/BH.avif" alt="Bleeding Heart Flower">
+    <img src="image/images.jpg" alt="Bleeding Heart Flower">
+    <img src="image/images (2).jpg" alt="Bleeding Heart Flower">
+  </div>
+
+  <div class="btn-container">
+    <a href="https://en.wikipedia.org/wiki/Lamprocapnos" target="_blank" class="more-info-btn">
+      Click me to learn more
+    </a>
   </div>
 
 </body>
