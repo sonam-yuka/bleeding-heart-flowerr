@@ -1,0 +1,181 @@
+/* BODY */
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #ffe6f0;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+nav {
+  background: #c2185b;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffd1e3;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #c2185b;
+  margin-bottom: 20px;
+}
+
+p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+  font-size: 18px;
+  color: #333;
+}
+
+/* FLOWER CONTAINER */
+.flower {
+  position: relative;
+  width: 220px;
+  height: 320px;
+  margin: 30px auto;
+}
+
+/* STEM */
+.stem {
+  position: absolute;
+  width: 6px;
+  height: 190px;
+  background: green;
+  left: 50%;
+  top: 90px;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+/* LEAVES */
+.leaf {
+  position: absolute;
+  width: 65px;
+  height: 35px;
+  background: #43a047;
+  border-radius: 60px 0;
+}
+
+.leaf.left {
+  left: 30px;
+  top: 180px;
+  transform: rotate(-35deg);
+}
+
+.leaf.right {
+  right: 30px;
+  top: 220px;
+  transform: rotate(145deg);
+}
+
+/* HEART FLOWER */
+.heart {
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  background: #e91e63;
+  top: 20px;
+  left: 65px;
+  transform: rotate(-45deg);
+  animation: float 2s infinite ease-in-out;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  background: #e91e63;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -42px;
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  left: 42px;
+}
+
+/* DROP */
+.drop {
+  position: absolute;
+  width: 18px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  top: 98px;
+  left: 100px;
+}
+
+/* FLOAT ANIMATION */
+@keyframes float {
+  0%, 100% { transform: rotate(-45deg) translateY(0); }
+  50% { transform: rotate(-45deg) translateY(-10px); }
+}
+
+
+/* Right Curve */
+.heart::after {
+  top: 0;
+  left: 42px;
+}
+
+/* White Droplet */
+.drop {
+  position: absolute;
+  width: 18px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  top: 98px;
+  left: 100px;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+    transform: rotate(-45deg) translateY(0);
+  }
+
+  50% {
+    transform: rotate(-45deg) translateY(-10px);
+  }
+}
+
+/* ORDERED LIST (LEFT ALIGNED) */
+ol {
+  max-width: 700px;
+  margin: auto;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+  padding-left: 20px;
+}
+
+/* LIST ITEMS */
+ol li {
+  margin-bottom: 10px;
+}
